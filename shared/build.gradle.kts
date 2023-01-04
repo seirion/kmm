@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.seirion.kmm"
-version = "0.0.2"
+version = "0.0.3"
 
 val GITHUB_USER: String by project
 val GITHUB_TOKEN: String by project
@@ -21,7 +21,7 @@ kotlin {
     cocoapods {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
-        version = "0.0.2"
+        version = "0.0.3"
         ios.deploymentTarget = "14.1"
         framework {
             baseName = "shared"
@@ -73,7 +73,7 @@ publishing {
             run {
                 groupId = "com.seirion.kmm"
                 artifactId = "shared"
-                version = "0.0.2"
+                version = "0.0.3"
                 artifact("$buildDir/outputs/aar/shared-release.aar")
             }
         }
