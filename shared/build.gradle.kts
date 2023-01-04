@@ -6,6 +6,9 @@ plugins {
     id("maven-publish")
 }
 
+group = "com.seirion.kmm"
+version = "0.0.1"
+
 val GITHUB_USER: String by project
 val GITHUB_TOKEN: String by project
 
