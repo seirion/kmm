@@ -2,7 +2,12 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("org.jetbrains.dokka") version "0.9.17"
+    id("maven-publish")
 }
+
+val GITHUB_USER: String by project
+val GITHUB_TOKEN: String by project
 
 kotlin {
     android()
@@ -46,6 +51,18 @@ kotlin {
             iosX64Test.dependsOn(this)
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            setUrl("https://maven.pkg.github.com/seirion/kmm")
+            credentials {
+                username = GITHUB_USER
+                password = GITHUB_TOKEN
+            }
         }
     }
 }
