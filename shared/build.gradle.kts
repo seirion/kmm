@@ -68,6 +68,16 @@ publishing {
             }
         }
     }
+    publications {
+        create<MavenPublication>("gpr") {
+            run {
+                groupId = "com.seirion.kmm"
+                artifactId = "shared"
+                version = "0.0.1"
+                artifact("$buildDir/outputs/aar/shared-release.aar")
+            }
+        }
+    }
 }
 
 android {
