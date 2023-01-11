@@ -7,7 +7,6 @@
     <groupId>io.github.seirion</groupId>
     <artifactId>shared</artifactId>
     <version>0.0.8</version>
-    <packaging>pom</packaging>
 
     <licenses>
         <license>
@@ -48,10 +47,5 @@
         <maven.deploy.skip>true</maven.deploy.skip>
         <tile.version>0.0.8</tile.version>
     </properties>
-
-    <modules>
-        <module>shared</module>
-    </modules>
-
 
 </project>
