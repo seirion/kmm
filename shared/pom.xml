@@ -24,6 +24,13 @@
         </developer>
     </developers>
 
+    <scm>
+        <connection>scm:git:https://github.com/seirion/kmm.git</connection>
+        <developerConnection>scm:git:ssh://github.com/seirion/kmm.git</developerConnection>
+        <url>https://github.com/seirion/kmm</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
