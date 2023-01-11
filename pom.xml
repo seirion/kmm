@@ -53,15 +53,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <modules>
-        <module>shared</module>
-    </modules>
-
     <profiles>
         <profile>
             <id>test</id>
             <modules>
-                <module>tests</module>
+                <module>shared</module>
             </modules>
         </profile>
         <profile>
