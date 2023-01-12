@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.seirion</groupId>
     <artifactId>shared</artifactId>
-    <version>0.0.12</version>
+    <version>0.0.13</version>
 
     <licenses>
         <license>
@@ -35,6 +35,21 @@
             <id>deploy</id>
             <build>
                 <plugins>
+
+                    <!-- Docs plugin -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.3.0</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
 
                     <!-- Source plugin -->
                     <plugin>

@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.seirion.kmm"
-version = "0.0.12"
+version = "0.0.13"
 
 val GITHUB_USER: String by project
 val GITHUB_TOKEN: String by project
@@ -21,7 +21,7 @@ kotlin {
     cocoapods {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
-        version = "0.0.12"
+        version = "0.0.13"
         ios.deploymentTarget = "14.1"
         framework {
             baseName = "shared"
